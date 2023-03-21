@@ -4,6 +4,10 @@ html, body {
   height: 100%;
 }
 
+*{
+  border: 2px solid red;
+}
+
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
@@ -16,10 +20,36 @@ body {
 }
 
 .modal {
+  display: flex;
+  gap: 16px;
   background: white;
+  padding: 16px; 
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+}
+
+.left-side{
+  display: flex;
+  flex-shrink: 0;
+}
+
+.right-side{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+}
+
+.heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.heading > .header{
+  font-weight: 900;
+  font-size: 20px;
 }
 
 .icon {
